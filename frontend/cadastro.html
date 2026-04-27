@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta  name="description"
+    content="Crie sua conta na UniMonitor para acessar monitorias universitárias."
+  >
+
+  <meta name="author" content="UniMonitor">
+
+  <title>Cadastro | UniMonitor</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="login-page">
+    <section class="login-container" aria-labelledby="titulo-cadastro">
+      <header class="login-header">
+        <h1 id="titulo-cadastro" class="logo">UniMonitor</h1>
+      </header>
+
+      <form id="cadastroForm" class="login-form" action="#" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Cadastro de usuário</legend>
+
+          <label class="visually-hidden" for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Nome completo"
+            required
+          >
+
+          <label class="visually-hidden" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Endereço de email"
+            autocomplete="email"
+            required
+          >
+
+          <label class="visually-hidden" for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Senha"
+            required
+          >
+
+          <label class="visually-hidden" for="tipo">Tipo de usuário</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecione o tipo de usuário</option>
+            <option value="aluno">Aluno</option>
+            <option value="monitor">Monitor</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Cadastrar</button>
+        </fieldset>
+      </form>
+
+      <nav class="signup-nav" aria-label="Login">
+        <p>
+          Já tem uma conta?
+          <a href="login.html">Entrar</a>
+        </p>
+      </nav>
+    </section>
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

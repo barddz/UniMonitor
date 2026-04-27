@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Criar nova monitoria na UniMonitor">
+
+  <title>Criar Monitoria | UniMonitor</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="login-page">
+    <section class="login-container" aria-labelledby="titulo-criar">
+      <header class="login-header">
+        <h1 id="titulo-criar" class="logo">UniMonitor</h1>
+      </header>
+
+      <form id="monitoriaForm" class="login-form">
+        <fieldset>
+          <legend class="visually-hidden">Criar monitoria</legend>
+
+          <label class="visually-hidden" for="disciplina">Disciplina</label>
+          <select id="disciplina" required>
+            <option value="">Selecione a disciplina</option>
+          </select>
+
+          <label class="visually-hidden" for="data">Data</label>
+          <input
+            type="date"
+            id="data"
+            required
+          >
+
+          <label class="visually-hidden" for="horaInicio">Hora início</label>
+          <input
+            type="time"
+            id="horaInicio"
+            required
+          >
+
+          <label class="visually-hidden" for="horaFim">Hora fim</label>
+          <input
+            type="time"
+            id="horaFim"
+            required
+          >
+
+          <label class="visually-hidden" for="modalidade">Modalidade</label>
+          <select id="modalidade" required>
+            <option value="">Modalidade</option>
+            <option value="online">Online</option>
+            <option value="presencial">Presencial</option>
+          </select>
+
+          <label class="visually-hidden" for="local">Local ou link</label>
+          <input
+            type="text"
+            id="local"
+            placeholder="Local ou link"
+            required
+          >
+
+          <button type="submit" class="btn-primary">
+            Criar monitoria
+          </button>
+        </fieldset>
+      </form>
+
+      <nav class="signup-nav">
+        <p>
+          <a href="monitorias.html">← Voltar</a>
+        </p>
+      </nav>
+    </section>
+  </main>
+
+  <script src="js/criar-monitoria.js"></script>
+</body>
+</html>

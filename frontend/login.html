@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Acesse sua conta na UniMonitor, plataforma de monitorias universitárias para alunos e monitores."
+  >
+
+  <meta name="author" content="UniMonitor">
+
+  <title>Login | UniMonitor</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="login-page">
+    <section class="login-container" aria-labelledby="titulo-login">
+      <header class="login-header">
+        <h1 id="titulo-login" class="logo">UniMonitor</h1>
+      </header>
+
+      <form id="loginForm" class="login-form" action="#" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Acesso à plataforma</legend>
+
+          <label class="visually-hidden" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Nome de usuário ou endereço de email"
+            autocomplete="email"
+            required
+          >
+
+          <label class="visually-hidden" for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Senha"
+            autocomplete="current-password"
+            required
+          >
+
+          <p class="forgot-password">
+            <a href="#">Esqueceu a senha?</a>
+          </p>
+
+          <button type="submit" class="btn-primary">Entrar</button>
+        </fieldset>
+      </form>
+
+      <nav class="signup-nav" aria-label="Cadastro">
+        <p>
+          Não tem uma conta?
+          <a href="cadastro.html">Inscrever-se</a>
+        </p>
+      </nav>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
